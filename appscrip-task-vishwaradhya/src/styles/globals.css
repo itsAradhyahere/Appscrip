@@ -1,3 +1,46 @@
+/* ===== THEME VARIABLES (GLOBAL) ===== */
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f6f7fb;
+  --text: #111111;
+  --muted: #6b7280;
+  --card: #ffffff;
+  --border: #e5e7eb;
+  --primary: #0a66ff;
+  --primary-dark: #084ec2;
+  --radius: 14px;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.05);
+  --shadow-md: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; }
+[data-theme="dark"] {
+  --bg: #0e0f12;
+  --text: #f5f5f5;
+  --muted: #aaa;
+  --card: #14161b;
+  --border: #23262e;
+  --accent: #66aaff;
+  --soft: #1a1d24;
+}
+
+/* smooth theme transitions */
+* {
+  transition: background 0.2s ease, color 0.2s ease, border 0.2s ease;
+}
+
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
